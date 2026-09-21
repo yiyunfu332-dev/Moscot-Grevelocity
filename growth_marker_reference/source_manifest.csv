@@ -1,0 +1,7 @@
+source,use,url,secondary_url_or_local_file,version_or_retrieval
+Seurat cc.genes.updated.2019,S/G2M phase markers,https://satijalab.org/seurat/reference/cc.genes.updated.2019.html,https://doi.org/10.1126/science.aad0501,2019 list
+KEGG hsa04110,Cell cycle pathway membership,https://www.kegg.jp/pathway/hsa04110,https://rest.kegg.jp/link/hsa/hsa04110,retrieved 2026-09-08
+KEGG hsa04210,Apoptosis pathway membership,https://www.kegg.jp/pathway/hsa04210,https://rest.kegg.jp/link/hsa/hsa04210,retrieved 2026-09-08
+Reactome R-HSA-69278/R-HSA-69306,Mitotic cell cycle and DNA replication,https://reactome.org/content/detail/R-HSA-69278,https://reactome.org/content/detail/R-HSA-69306,release downloaded 2026-09-08
+Reactome R-HSA-109581/R-HSA-109606,Apoptosis and intrinsic apoptosis,https://reactome.org/content/detail/R-HSA-109581,https://reactome.org/content/detail/R-HSA-109606,release downloaded 2026-09-08
+ZFIN human orthology,Reviewed human-zebrafish orthology,https://zfin.org/downloads/human_orthos.txt,/tmp/Moscot-Grevelocity_update/human_orthos.txt,local snapshot

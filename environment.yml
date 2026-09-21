@@ -1,0 +1,33 @@
+name: zebrafish-growth-reproducible
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.15
+  - pip
+  - pip:
+      # Versions used for the verified September 2026 project run.
+      - numpy==2.4.6
+      - scipy==1.16.3
+      - pandas==2.3.3
+      - anndata==0.10.9
+      - scanpy==1.11.5
+      - mudata==0.3.8
+      - moscot==0.5.1
+      - ott-jax==0.6.0
+      - jax==0.10.2
+      - jaxlib==0.10.2
+      - graphvelo==0.1.9
+      - scvelo==0.3.4
+      - dynamo-release==1.5.3
+      - numba==0.65.1
+      - llvmlite==0.47.0
+      - scikit-learn==1.8.0
+      - statsmodels==0.14.6
+      - matplotlib==3.10.9
+      - seaborn==0.13.2
+      - h5py==3.16.0
+      - joblib==1.5.3
+      - networkx==3.6.1
+      - tqdm==4.67.3
+      - ipykernel==7.2.0
+      - jupyter==1.1.1

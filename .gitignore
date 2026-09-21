@@ -1,0 +1,17 @@
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+*.log
+slurm-*.out
+*.h5ad
+*.h5mu
+*.loom
+*.npy
+*.npz
+*.pkl
+cross_species_validation/data/
+cross_species_validation/cache/
+cross_species_validation/results/
+cross_species_validation/figures/
+blood_growth_graphvelo_moscot_v2/checkpoints/
+blood_growth_graphvelo_moscot_v2/results/
