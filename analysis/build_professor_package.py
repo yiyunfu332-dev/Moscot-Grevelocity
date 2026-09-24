@@ -105,9 +105,9 @@ p=PACK
 doc=pymupdf.open()
 for f in sorted((p/'overview').glob('*.pdf')):
  with pymupdf.open(f) as part:doc.insert_pdf(part)
-doc.save(p/'MOSCOT_summary_for_professor.pdf');doc.close()
+doc.save(p/'MOSCOT_summary_brief.pdf');doc.close()
 gallery=json.loads((p/'gallery_manifest.json').read_text())
-md='# Figure index: current results and project history\n\nAll figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Six-page summary](MOSCOT_summary_for_professor.pdf) · [80-page full report](MOSCOT_project_figures_for_professor.pdf) · [Executed notebooks](README.md#saved-notebook-history).\n\n'
+md='# Figure index: current results and project history\n\nAll figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Six-page summary](MOSCOT_summary_brief.pdf) · [80-page full report](MOSCOT_project_figures_for_professor.pdf) · [Executed notebooks](README.md#saved-notebook-history).\n\n'
 for i,e in enumerate(gallery[:6],1):md+=f"## {i}. {e['title']}\n\n{e['context']}\n\n![{e['title']}]({e['path']})\n\n"
 md+='## Complete displayed figure index\n\n| Page | Figure | Status | Original |\n|---:|---|---|---|\n'
 for i,e in enumerate(gallery,1):md+=f"| {i} | [{e['title']}]({e['path']}) | {e['status']} | [File]({e.get('original',e['path'])}) |\n"
@@ -127,7 +127,7 @@ for e in unique_pdfs.values():
   duplicate_paths={x['path'] for x in entries if x['sha256']==e['sha256']};shown=sum(x.get('original') in duplicate_paths for x in gallery)
  assert shown==expected,(e['path'],expected,shown)
 with pymupdf.open(p/'MOSCOT_project_figures_for_professor.pdf') as d:assert len(d)==len(gallery)==80
-with pymupdf.open(p/'MOSCOT_summary_for_professor.pdf') as d:assert len(d)==6
+with pymupdf.open(p/'MOSCOT_summary_brief.pdf') as d:assert len(d)==6
 n=json.loads((p/'executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb').read_text());cells=[c for c in n['cells'] if c['cell_type']=='code' and ''.join(c.get('source',[])).strip()];assert len(cells)==41 and all(c.get('execution_count') is not None for c in cells);assert not any(o.get('output_type')=='error' for c in cells for o in c.get('outputs',[]))
 (p/'VERIFICATION.md').write_text(f'''# Sharing package verification
 

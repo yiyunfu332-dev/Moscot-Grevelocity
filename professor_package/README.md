@@ -6,7 +6,7 @@ This project investigated how blood-cell populations change during zebrafish dev
 
 ## Start here
 
-1. [Six-page discussion summary](MOSCOT_summary_for_professor.pdf), [GitHub figure index](FIGURE_INDEX.md), and [complete illustrated figure report](MOSCOT_project_figures_for_professor.pdf): six new overview charts/pages drawn from saved results, followed by the historical/current figure appendix. Every page states its evidence status. The overview pages are newly drawn; the underlying fits are not new.
+1. [Six-page discussion summary](MOSCOT_summary_brief.pdf), [GitHub figure index](FIGURE_INDEX.md), and [complete illustrated figure report](MOSCOT_project_figures_for_professor.pdf): six new overview charts/pages drawn from saved results, followed by the historical/current figure appendix. Every page states its evidence status. The overview pages are newly drawn; the underlying fits are not new.
 2. [Previously executed primary MOSCOT notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb): exact copy of the local saved run, **41/41 nonempty code cells executed and zero saved errors**. Original figures, tables, execution counts, kernel metadata and paths are preserved. Use this to review the past run; use the clean notebook at the repository root for a new run.
 3. [Current scientific summary](../docs/MOSCOT_SUMMARY.md): corrected conclusions, including weak/negative results.
 4. [Browse the figure gallery](gallery.html): download the package and open this file in a browser; GitHub does not render standalone HTML as a website.
@@ -147,7 +147,7 @@ It does not establish a causal lineage map, an absolute division/death model, a 
 
 ### Reading the figures and reproducing the work
 
-For an initial discussion, read the [six-page summary](MOSCOT_summary_for_professor.pdf), then the [executed primary notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb). For the full history, use the [80-page report](MOSCOT_project_figures_for_professor.pdf) or [figure index](FIGURE_INDEX.md). Every displayed figure has a status label; original vector files remain available for close inspection.
+For an initial discussion, read the [six-page summary](MOSCOT_summary_brief.pdf), then the [executed primary notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb). For the full history, use the [80-page report](MOSCOT_project_figures_for_professor.pdf) or [figure index](FIGURE_INDEX.md). Every displayed figure has a status label; original vector files remain available for close inspection.
 
 The notebooks under `executed_notebooks/` are exact historical copies with saved outputs and original environment/path assumptions. The [root notebook](../zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb) is the clean, portable entry point for rerunning. Its cleared outputs should not be confused with the executed record. Large raw datasets, the H5AD checkpoint, and coupling binaries are excluded from Git and listed in the data manifest. A new environment installation and a new end-to-end run were not performed during publication. See the [reproduction guide](../docs/REPRODUCIBILITY.md) and [package verification](VERIFICATION.md).
 

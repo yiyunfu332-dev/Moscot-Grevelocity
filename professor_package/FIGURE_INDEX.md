@@ -1,6 +1,6 @@
 # Figure index: current results and project history
 
-All figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Six-page summary](MOSCOT_summary_for_professor.pdf) · [80-page full report](MOSCOT_project_figures_for_professor.pdf) · [Executed notebooks](README.md#saved-notebook-history).
+All figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Six-page summary](MOSCOT_summary_brief.pdf) · [80-page full report](MOSCOT_project_figures_for_professor.pdf) · [Executed notebooks](README.md#saved-notebook-history).
 
 ## 1. 1. Cohort and sampling support
 
