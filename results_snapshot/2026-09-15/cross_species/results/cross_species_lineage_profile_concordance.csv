@@ -1,0 +1,5 @@
+comparison,program,n_genes,n_common_types,common_types,spearman_rho,pearson_r,bootstrap_ci_low,bootstrap_ci_high,ortholog_permutation_p,qvalue
+zebrafish_vs_Popescu,proliferation,91,5,erythroid;innate_lymphoid;macrophage;neutrophil;stem_progenitor,0.2830325135101393,0.378990257498103,0.07664334824693045,0.41752414435784474,0.0969030969030969,0.1292041292041292
+zebrafish_vs_Popescu,apoptosis,38,5,erythroid;innate_lymphoid;macrophage;neutrophil;stem_progenitor,0.08296395438858929,0.07148144821118149,0.018972176939810736,0.17103632599665106,0.05194805194805195,0.1038961038961039
+zebrafish_vs_GSE189161_exploratory,proliferation,91,3,erythroid;myeloid;stem_progenitor,0.7335400752103199,0.7659308910736541,0.33153302660199396,0.7887924562020203,0.000999000999000999,0.003996003996003996
+zebrafish_vs_GSE189161_exploratory,apoptosis,38,3,erythroid;myeloid;stem_progenitor,-0.2197241854154432,-0.24126360688263507,-0.3529389846297159,0.12430307203175277,0.4725274725274725,0.4725274725274725

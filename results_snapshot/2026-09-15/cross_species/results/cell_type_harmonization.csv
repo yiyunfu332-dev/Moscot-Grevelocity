@@ -1,0 +1,42 @@
+dataset,original_label,broad_type
+zebrafish,hematopoietic_stem_and_progenitor_HSPC,stem_progenitor
+zebrafish,erythroblast,erythroid
+zebrafish,macrophage,macrophage
+zebrafish,macrophage_immature,macrophage
+zebrafish,neutrophil,neutrophil
+zebrafish,innate-lymphoid-cell,innate_lymphoid
+Popescu,HSC_MPP,stem_progenitor
+Popescu,Early Erythroid,erythroid
+Popescu,Mid Erythroid,erythroid
+Popescu,Late Erythroid,erythroid
+Popescu,MEMP,erythroid
+Popescu,Kupffer Cell,macrophage
+Popescu,Mono-Mac,macrophage
+Popescu,Monocyte,macrophage
+Popescu,Monocyte precursor,macrophage
+Popescu,VCAM1+ EI macrophage,macrophage
+Popescu,Neutrophil-myeloid progenitor,neutrophil
+Popescu,NK,innate_lymphoid
+Popescu,ILC precursor,innate_lymphoid
+GSE189161,HSC,stem_progenitor
+GSE189161,MPP-1,stem_progenitor
+GSE189161,MPP-2,stem_progenitor
+GSE189161,MPP-3,stem_progenitor
+GSE189161,E-Prog-1,erythroid
+GSE189161,E-Prog-2,erythroid
+GSE189161,E-Prog-3,erythroid
+GSE189161,Mk/E-MPP,erythroid
+GSE189161,Mk-Prog,erythroid
+GSE189161,My-MPP,myeloid
+GSE189161,G-Prog-1,myeloid
+GSE189161,G-Prog-2,myeloid
+GSE189161,G-Prog-3,myeloid
+GSE189161,G/Mono-Prog,myeloid
+GSE189161,Mono/cDC-Prog,myeloid
+GSE189161,pDC-Prog,myeloid
+GSE189161,Baso/Mast-Prog,myeloid
+GSE189161,Ly-Prog-1,lymphoid
+GSE189161,Ly-Prog-2,lymphoid
+GSE189161,Ly-Prog-3,lymphoid
+GSE189161,Ly-Prog-4,lymphoid
+GSE189161,Ly-Prog-5,lymphoid

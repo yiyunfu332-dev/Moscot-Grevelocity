@@ -1,3 +1,5 @@
+> **Historical, superseded September 2026.** Smaller marker panels and M2/M3 descriptions below are not the current analysis. Read [MOSCOT_SUMMARY.md](MOSCOT_SUMMARY.md) and [PROJECT_REPAIR_REPORT.md](PROJECT_REPAIR_REPORT.md).
+
 # Zebrafish hematopoiesis workflow summary / 斑马鱼造血分析流程总结
 
 ## 1. Objective / 研究目标

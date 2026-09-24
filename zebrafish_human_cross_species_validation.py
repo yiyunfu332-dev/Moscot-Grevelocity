@@ -76,9 +76,8 @@ mpl.rcParams.update(
 
 EXPANDED_MAPPING_NAME = "reviewed_zebrafish_to_human_growth_orthologs_expanded.csv"
 
-ROOT = Path.cwd().resolve()
-if not (ROOT / EXPANDED_MAPPING_NAME).exists():
-    ROOT = Path("/net/dali/home/mscbio/jis322/dynamo")
+ROOT = Path(os.environ.get("ZEBRAFISH_PROJECT_DIR", str(Path.cwd()))).expanduser().resolve()
+DATA_ROOT = Path(os.environ.get("ZEBRAFISH_DATA_DIR", str(ROOT))).expanduser()
 
 VALIDATION_DIR = ROOT / "cross_species_validation"
 DATA_DIR = VALIDATION_DIR / "data"
@@ -93,7 +92,7 @@ ZF_CHECKPOINT = (
     / "blood_growth_graphvelo_moscot_v2/checkpoints/"
     / "zebrafish_growth_graphvelo_moscot_v2.h5ad"
 )
-ZF_FULL = ROOT / "zf_atlas_hematopoetic_endothelial_v4_release.h5ad"
+ZF_FULL = DATA_ROOT / "zf_atlas_hematopoetic_endothelial_v4_release.h5ad"
 ORTHOLOG_CSV = ROOT / EXPANDED_MAPPING_NAME
 MARKER_SOURCE_MANIFEST = ROOT / "growth_marker_reference/source_manifest.csv"
 ZFIN_ORTHOLOG_DUMP = ROOT / "human_orthos.txt"

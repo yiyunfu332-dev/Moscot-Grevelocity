@@ -1,0 +1,7 @@
+dataset,marker_class,found,required,fraction,missing
+zebrafish_full_counts,apoptosis,46,46,1.0,
+zebrafish_full_counts,proliferation,95,95,1.0,
+Popescu_E-MTAB-7407,apoptosis,38,38,1.0,
+Popescu_E-MTAB-7407,proliferation,91,91,1.0,
+GSE189161,apoptosis,38,38,1.0,
+GSE189161,proliferation,91,91,1.0,

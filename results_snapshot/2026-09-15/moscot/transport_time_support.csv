@@ -1,0 +1,10 @@
+hpf,total_cells,total_fish,passes_time_support
+12.0,19,4,False
+14.0,77,4,True
+16.0,186,4,True
+19.0,79,4,True
+24.0,1177,4,True
+48.0,466,4,True
+72.0,528,4,True
+120.0,1456,4,True
+240.0,1438,4,True

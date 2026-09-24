@@ -1,0 +1,10 @@
+official_fine_cell_type,n_cells,n_fish,first_hpf,last_hpf,n_numeric_clusters
+erythroblast,2358,32,12.0,240.0,8
+macrophage,817,30,14.0,240.0,3
+hematopoietic_stem_and_progenitor_HSPC,655,28,14.0,240.0,4
+neutrophil,507,21,16.0,240.0,3
+non_specific_hematopoietic,464,33,12.0,240.0,8
+macrophage_immature,319,31,12.0,240.0,7
+microglia,193,16,12.0,240.0,3
+innate-lymphoid-cell,113,10,24.0,240.0,2
+thymocyte,15,5,120.0,240.0,1

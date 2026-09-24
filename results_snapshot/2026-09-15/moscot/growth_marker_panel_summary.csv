@@ -1,0 +1,3 @@
+marker_class,active_zebrafish_genes,active_unique_human_orthologs,minimum_detection_fraction
+proliferation,95,91,0.005
+apoptosis,46,38,0.005

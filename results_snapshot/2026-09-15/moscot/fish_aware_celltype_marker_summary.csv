@@ -1,0 +1,10 @@
+official_fine_cell_type,n_independent_fish,n_fish_time_contrasts,status,significant_positive_markers
+erythroblast,21,21,tested,560
+hematopoietic_stem_and_progenitor_HSPC,17,17,tested,319
+innate-lymphoid-cell,7,7,tested,214
+macrophage,21,21,tested,1507
+macrophage_immature,15,15,tested,247
+microglia,12,12,tested,752
+neutrophil,14,14,tested,1080
+non_specific_hematopoietic,23,23,tested,1
+thymocyte,1,1,insufficient_fish,0
