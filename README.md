@@ -6,6 +6,8 @@ Growth-informed native moscot transport across nine developmental stages, with f
 
 ## Share with a professor
 
+[Read the detailed project explanation](professor_package/README.md#project-explanation): research question, data, M0/M1 methods, quantitative findings, historical attempts, and limitations of the completed work.
+
 - [Previously executed MOSCOT notebook, with saved outputs](professor_package/executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb): exact original 41-cell saved run, no saved errors.
 - [Six-page results summary](professor_package/MOSCOT_summary_for_professor.pdf) and [complete 80-page figure report](professor_package/MOSCOT_project_figures_for_professor.pdf).
 - [Figure gallery and index](professor_package/FIGURE_INDEX.md), including historical, partial and superseded analyses; [reading guide](professor_package/README.md).
@@ -35,6 +37,6 @@ The entry points are [the main notebook](zebrafish_hematopoiesis_growth_mapping_
 
 The dated snapshot publishes the saved MOSCOT and cross-species result tables and figures. Multi-gigabyte raw expression data, the 267 MB checkpoint, and approximately 59 MB of coupling files remain outside Git; [the data manifest](docs/DATA_MANIFEST.csv) describes required inputs and generated dependencies. Recompute them with the main notebook before running checkpoint-based audits. Frozen snapshot path fields preserve the historical machine locations for provenance; they are not portable input paths.
 
-The original local main notebook has a recorded 41-cell execution with zero saved errors. Published notebooks have outputs cleared after portability edits; this update does not claim a fresh scientific rerun. A clean rebuild of the pinned environment remains unverified. See [publication verification](docs/PUBLICATION_VERIFICATION.md).
+The original local main notebook has a recorded 41-cell execution with zero saved errors. The clean root notebooks have outputs cleared after portability edits; exact historical copies with saved outputs are preserved in `professor_package/executed_notebooks/`. This update does not claim a fresh scientific rerun. A clean rebuild of the pinned environment remains unverified. See [publication verification](docs/PUBLICATION_VERIFICATION.md).
 
 The September 2 bilingual narrative is retained with an explicit historical notice. Its M2/M3 and smaller-panel descriptions are superseded. The current method is native M0/M1, with no Top-K pruning and no velocity reweighting.
