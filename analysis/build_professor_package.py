@@ -9,7 +9,7 @@ from PIL import Image
 import numpy as np
 import pymupdf as fitz
 import argparse
-parser=argparse.ArgumentParser(description='Build the MOSCOT professor package from preserved local analysis outputs. Requires matplotlib, numpy, Pillow and PyMuPDF.')
+parser=argparse.ArgumentParser(description='Build the MOSCOT project report from preserved local analysis outputs. Requires matplotlib, numpy, Pillow and PyMuPDF.')
 parser.add_argument('--source',type=Path,default=Path.home()/'dynamo')
 parser.add_argument('--repository',type=Path,default=Path(__file__).resolve().parents[1])
 args=parser.parse_args()
@@ -63,7 +63,7 @@ for i,t in enumerate(r):
 ax.axhline(0,color='black',lw=1);ax.set_xticks(range(len(r)),labels);ax.set_ylabel('Fish-weighted cosine and 95% bootstrap interval');ax.set_xlabel('Interval (hpf)');save(fig,'03_directional_agreement','3. Directional agreement is limited to two intervals','Green: positive absolute direction, positive fish-bootstrap lower bound, and within-fish permutation FDR <0.05 (16–19 and 48–72 hpf). Gray: criteria not met. Late negative cosine is not positive concordance even when better than the shuffled null. Shared expression/PCA means this is complementary computational evidence.')
 r=rows('native_moscot_parameter_sensitivity_summary.csv');fig,ax=plt.subplots(figsize=(11.7,8.3));ax.barh(range(len(r)),[float(t['max_type_joint_mass_l1'])/2 for t in r],color='#237f9e');ax.set_yticks(range(len(r)),[t['run'] for t in r]);ax.invert_yaxis();ax.set_xlabel('Maximum type-joint TVD versus primary fit across intervals');save(fig,'04_parameter_sensitivity','4. Solver choices materially affect the coupling','Plotted TVD is half the saved normalized type-joint L1 distance. Eleven one-factor configurations; all fits converged. Numerical convergence does not establish biological accuracy. Balanced tau=1 is a stress test. Source: native_moscot_parameter_sensitivity_summary.csv.')
 r=rows('graphvelo_gene_qc_sensitivity_summary.csv');fig,ax=plt.subplots(figsize=(11.7,8.3));x=np.arange(len(r));ax.plot(x,[float(t['cell_cosine_vs_primary_median']) for t in r],'o-',label='Median');ax.plot(x,[float(t['cell_cosine_vs_primary_q05']) for t in r],'s--',label='5th percentile');ax.axhline(0,color='gray');ax.set_xticks(x,[t['gamma_r2_threshold'] for t in r]);ax.set_xlabel('Velocity gene gamma-R2 threshold');ax.set_ylabel('Cell cosine relative to saved primary GraphVelo');ax.legend();save(fig,'05_velocity_qc','5. Stringent velocity-gene filtering destabilizes some cells','Thresholds 0.05 and 0.10 largely preserve primary directions. At 0.20, the lower tail becomes negative. Similarity to the primary fit measures stability, not correctness. Source: graphvelo_gene_qc_sensitivity_summary.csv.')
-fig,ax=plt.subplots(figsize=(11.7,8.3));ax.axis('off');text='''WHAT THE CURRENT WORK SUPPORTS\n\n• A reproducible saved native M0/M1 run, plus fish-aware audits.\n• A larger growth-prior source-mass effect at 120–240 hpf.\n• Positive complementary direction evidence at two intervals.\n• Modest human expression-program concordance, with negative specificity tests.\n\nWHAT REMAINS UNRESOLVED\n\n• Actual division/death rates and true parent–descendant relationships.\n• Negative absolute late-interval velocity agreement.\n• Strong epsilon/tau sensitivity and sparse early sampling.\n• Whether growth priors improve independent predictive performance.\n\nHISTORY IS INCLUDED, NOT HIDDEN\n\n• Earlier combined/reweighted models and smaller-marker-panel results.\n• Cluster-23 exploratory trajectories, including mixed lineage markers.\n• Partial notebooks and saved errors, explicitly labeled as historical.''';ax.text(.02,.97,text,va='top',fontsize=13,linespacing=1.65);save(fig,'06_interpretation','6. What succeeded, what did not, and what is still unknown','Historical plots are a record of work, not additional validation of the current model. The separate non-OT project and unapproved integrated proposal are outside this sharing package.')
+fig,ax=plt.subplots(figsize=(11.7,8.3));ax.axis('off');text='''WHAT THE CURRENT WORK SUPPORTS\n\n• A reproducible saved native M0/M1 run, plus fish-aware audits.\n• A larger growth-prior source-mass effect at 120–240 hpf.\n• Positive complementary direction evidence at two intervals.\n• Modest human expression-program concordance, with negative specificity tests.\n\nWHAT REMAINS UNRESOLVED\n\n• Actual division/death rates and true parent–descendant relationships.\n• Negative absolute late-interval velocity agreement.\n• Strong epsilon/tau sensitivity and sparse early sampling.\n• Whether growth priors improve independent predictive performance.\n\nHISTORY IS INCLUDED, NOT HIDDEN\n\n• Earlier combined/reweighted models and smaller-marker-panel results.\n• Cluster-23 exploratory trajectories, including mixed lineage markers.\n• Partial notebooks and saved errors, explicitly labeled as historical.''';ax.text(.02,.97,text,va='top',fontsize=13,linespacing=1.65);save(fig,'06_interpretation','6. What succeeded, what did not, and what is still unknown','Historical plots are a record of work, not additional validation of the current model. The separate non-OT project and unapproved integrated proposal are outside this project record.')
 # Render all PDF pages for a browsable gallery and illustrated PDF appendix.
 gallery=list(overviews);seen=set();pdf_renderer=shutil.which('pdftoppm')
 for k,e in enumerate(entries):
@@ -101,7 +101,7 @@ print(json.dumps({'source_artifacts':len(entries),'notebooks':len(notebooks),'fi
 import pymupdf
 r=ROOT
 p=PACK
-# Six-page concise companion for an initial professor discussion.
+# Six-page project summary.
 doc=pymupdf.open()
 for f in sorted((p/'overview').glob('*.pdf')):
  with pymupdf.open(f) as part:doc.insert_pdf(part)
@@ -129,7 +129,7 @@ for e in unique_pdfs.values():
 with pymupdf.open(p/'MOSCOT_project_figures_for_professor.pdf') as d:assert len(d)==len(gallery)==80
 with pymupdf.open(p/'MOSCOT_summary_brief.pdf') as d:assert len(d)==6
 n=json.loads((p/'executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb').read_text());cells=[c for c in n['cells'] if c['cell_type']=='code' and ''.join(c.get('source',[])).strip()];assert len(cells)==41 and all(c.get('execution_count') is not None for c in cells);assert not any(o.get('output_type')=='error' for c in cells for o in c.get('outputs',[]))
-(p/'VERIFICATION.md').write_text(f'''# Sharing package verification
+(p/'VERIFICATION.md').write_text(f'''# Project report verification
 
 - {len(entries)} source/notebook-image artifacts: sizes and SHA-256 verified.
 - Original primary notebook: exact source copy; 41/41 executed nonempty code cells; zero saved errors.

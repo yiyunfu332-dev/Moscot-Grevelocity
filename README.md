@@ -4,12 +4,12 @@ Growth-informed native moscot transport across nine developmental stages, with f
 
 **Current finding:** the growth prior changes source mass most at 120→240 hpf (TVD 0.0565), while robust positive velocity concordance appears only at 16→19 and 48→72 hpf. The late interval has negative absolute direction agreement. These are model comparisons, not experimentally validated lineage transitions.
 
-## Share with a professor
+## Project overview and results
 
 [Read the detailed project explanation](professor_package/README.md#project-explanation): research question, data, M0/M1 methods, quantitative findings, historical attempts, and limitations of the completed work.
 
 - [Previously executed MOSCOT notebook, with saved outputs](professor_package/executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb): exact original 41-cell saved run, no saved errors.
-- [Six-page results summary](professor_package/MOSCOT_summary_brief.pdf) and [complete 80-page figure report](professor_package/MOSCOT_project_figures_for_professor.pdf).
+- [Results summaries and complete figure index](professor_package/FIGURE_INDEX.md).
 - [Figure gallery and index](professor_package/FIGURE_INDEX.md), including historical, partial and superseded analyses; [reading guide](professor_package/README.md).
 
 The original executed notebook retains its historical paths and environment. The clean root notebook remains the portable rerun entry point.

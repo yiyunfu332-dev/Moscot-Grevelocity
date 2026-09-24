@@ -2,11 +2,11 @@
 
 This project investigated how blood-cell populations change during zebrafish development by combining time-resolved single-cell expression, proliferation/apoptosis programs, optimal transport, and RNA-velocity analysis. This page records the completed computational work, its development, and its limitations. It includes successful runs, partial analyses, negative findings, and superseded methods.
 
-**Project status:** preserved record of work completed through September 2026. The sharing package was assembled on 24 September; no scientific model was rerun for publication. Further experiments discussed during development have not been performed or established as results.
+**Project status:** preserved record of work completed through September 2026. The project record was assembled on 24 September; no scientific model was rerun for publication. Further experiments discussed during development have not been performed or established as results.
 
 ## Start here
 
-1. [Six-page discussion summary](MOSCOT_summary_brief.pdf), [GitHub figure index](FIGURE_INDEX.md), and [complete illustrated figure report](MOSCOT_project_figures_for_professor.pdf): six new overview charts/pages drawn from saved results, followed by the historical/current figure appendix. Every page states its evidence status. The overview pages are newly drawn; the underlying fits are not new.
+1. [Results summaries and complete figure index](FIGURE_INDEX.md): six overview figures drawn from saved results, followed by current and historical figures. Status labels distinguish current, exploratory, and superseded results. The overview figures are newly drawn; the underlying fits are not new.
 2. [Previously executed primary MOSCOT notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb): exact copy of the local saved run, **41/41 nonempty code cells executed and zero saved errors**. Original figures, tables, execution counts, kernel metadata and paths are preserved. Use this to review the past run; use the clean notebook at the repository root for a new run.
 3. [Current scientific summary](../docs/MOSCOT_SUMMARY.md): corrected conclusions, including weak/negative results.
 4. [Browse the figure gallery](gallery.html): download the package and open this file in a browser; GitHub does not render standalone HTML as a website.
@@ -147,7 +147,7 @@ It does not establish a causal lineage map, an absolute division/death model, a 
 
 ### Reading the figures and reproducing the work
 
-For an initial discussion, read the [six-page summary](MOSCOT_summary_brief.pdf), then the [executed primary notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb). For the full history, use the [80-page report](MOSCOT_project_figures_for_professor.pdf) or [figure index](FIGURE_INDEX.md). Every displayed figure has a status label; original vector files remain available for close inspection.
+For an overview, read the [results summaries](FIGURE_INDEX.md), then the [executed primary notebook](executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb). For the full history, use the [figure index](FIGURE_INDEX.md). Every displayed figure has a status label; original vector files remain available for close inspection.
 
 The notebooks under `executed_notebooks/` are exact historical copies with saved outputs and original environment/path assumptions. The [root notebook](../zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb) is the clean, portable entry point for rerunning. Its cleared outputs should not be confused with the executed record. Large raw datasets, the H5AD checkpoint, and coupling binaries are excluded from Git and listed in the data manifest. A new environment installation and a new end-to-end run were not performed during publication. See the [reproduction guide](../docs/REPRODUCIBILITY.md) and [package verification](VERIFICATION.md).
 
@@ -172,14 +172,14 @@ The full error messages and source hashes are in [the notebook execution manifes
 
 ## Figure coverage and provenance
 
-Includes every PNG/PDF/SVG/JPEG found in the current MOSCOT figures, current human validation, earlier official blood GraphVelo figures, relevant archive figures, cluster-23 trajectories and whole-atlas GraphVelo figure folder. Also extracts every saved PNG output from the five notebooks above. Original copies are byte-identical to local sources. The appendix renders every page of each unique PDF and retains unique PNG outputs; identical content and paired SVG/PNG display versions are not repeated in the appendix. All original formats and duplicates remain in the artifact manifest. Charts from unrelated Revelio projects, the separate non-OT project, and the integrated proposal are not uploaded here.
+Includes every PNG/PDF/SVG/JPEG found in the current MOSCOT figures, current human validation, earlier official blood GraphVelo figures, relevant archive figures, cluster-23 trajectories and whole-atlas GraphVelo figure folder. Also extracts every saved PNG output from the five notebooks above. Original copies are byte-identical to local sources. The gallery renders every page of each unique original PDF and retains unique PNG outputs; identical content and paired SVG/PNG display versions are not repeated in the gallery. All original formats and duplicates remain in the artifact manifest. Charts from unrelated Revelio projects, the separate non-OT project, and the integrated proposal are not uploaded here.
 
 [Artifact manifest](artifact_manifest.csv): source, path, status, interpretation note, size and SHA-256. [Gallery manifest](gallery_manifest.json): displayed page order and original links. PDF previews are for reading; original PDFs/SVGs retain publication-quality vectors.
 
-## Main takeaways for discussion
+## Main findings
 
 The growth-prior source-mass effect is largest at 120–240 hpf, but GraphVelo has negative absolute agreement there. Positive corrected directional evidence occurs only at 16–19 and 48–72 hpf. Early 12 hpf sampling is insufficient for type-level claims. Epsilon/tau materially influence transport. Human expression-program concordance does not validate lineage or absolute growth. These limitations are part of the project results, not omitted failures.
 
-## Rebuilding the package
+## Regenerating figures
 
 `python analysis/build_professor_package.py --source /path/to/original/dynamo --repository /path/to/this/repository` copies the preserved source files and redraws summaries from the dated result snapshot. Report generation requires matplotlib, numpy, Pillow and PyMuPDF; these are reporting dependencies, not changes to the scientific environment.

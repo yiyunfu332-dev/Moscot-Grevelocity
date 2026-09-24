@@ -1,4 +1,4 @@
-# Sharing package verification
+# Project report verification
 
 - 106 source/notebook-image artifacts: sizes and SHA-256 verified.
 - Original primary notebook: exact source copy; 41/41 executed nonempty code cells; zero saved errors.

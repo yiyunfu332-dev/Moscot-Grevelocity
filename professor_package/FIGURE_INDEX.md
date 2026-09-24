@@ -1,6 +1,6 @@
 # Figure index: current results and project history
 
-All figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Six-page summary](MOSCOT_summary_brief.pdf) · [80-page full report](MOSCOT_project_figures_for_professor.pdf) · [Executed notebooks](README.md#saved-notebook-history).
+All figures are included regardless of whether they support the current model. Status labels identify exploratory and superseded work. [Executed notebooks](README.md#saved-notebook-history).
 
 ## 1. 1. Cohort and sampling support
 
@@ -34,7 +34,7 @@ Thresholds 0.05 and 0.10 largely preserve primary directions. At 0.20, the lower
 
 ## 6. 6. What succeeded, what did not, and what is still unknown
 
-Historical plots are a record of work, not additional validation of the current model. The separate non-OT project and unapproved integrated proposal are outside this sharing package.
+Historical plots are a record of work, not additional validation of the current model. The separate non-OT project and unapproved integrated proposal are outside this project record.
 
 ![6. What succeeded, what did not, and what is still unknown](overview/06_interpretation.png)
 
