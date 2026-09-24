@@ -1,0 +1,74 @@
+[
+  {
+    "source": "zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb",
+    "path": "executed_notebooks/zebrafish_hematopoiesis_growth_mapping_graphvelo_moscot.ipynb",
+    "status": "CURRENT SAVED RUN",
+    "context": "41 executed nonempty cells; no saved errors. Original paths and outputs preserved; not a new execution.",
+    "kind": "notebook",
+    "bytes": 1928571,
+    "sha256": "f04295b650abc868ae3d9bd36e411b92e5bf32da7f1d9355b604b82c306f324b",
+    "nonempty_code_cells": 41,
+    "executed_cells": 41,
+    "errors": []
+  },
+  {
+    "source": "hematopoiesis_GraphVelo_moscot.ipynb",
+    "path": "executed_notebooks/hematopoiesis_GraphVelo_moscot.ipynb",
+    "status": "HISTORICAL / SAVED ERROR",
+    "context": "Earlier combined model; saved categorical-median error. Superseded by native M0/M1.",
+    "kind": "notebook",
+    "bytes": 2881884,
+    "sha256": "500937ea668454e48933b88a6c2b2c35046fd772c79a41c7ff18222ccdc7a0d7",
+    "nonempty_code_cells": 40,
+    "executed_cells": 40,
+    "errors": [
+      {
+        "cell": 41,
+        "name": "TypeError",
+        "message": "category dtype does not support aggregation 'median'"
+      }
+    ]
+  },
+  {
+    "source": "hematopoiesis_graphvelo_2.ipynb",
+    "path": "executed_notebooks/hematopoiesis_graphvelo_2.ipynb",
+    "status": "HISTORICAL / PARTIAL RUN",
+    "context": "Earlier GraphVelo stage; some nonempty cells have no execution count.",
+    "kind": "notebook",
+    "bytes": 2069176,
+    "sha256": "289ec396058b20d9802b5c30201b8a08e52f1e0367a7888ccbfada54b782d78d",
+    "nonempty_code_cells": 31,
+    "executed_cells": 27,
+    "errors": []
+  },
+  {
+    "source": "hematopoiesis_graphvelo.ipynb",
+    "path": "executed_notebooks/hematopoiesis_graphvelo.ipynb",
+    "status": "HISTORICAL / SAVED ERROR",
+    "context": "Earlier annotation approach; saved SUBTYPE_RULES NameError.",
+    "kind": "notebook",
+    "bytes": 117109,
+    "sha256": "0274b424d6409ef981c4c29dfa34ca62a0056d0ed71eaf44f9fa73e2be4fd2bf",
+    "nonempty_code_cells": 43,
+    "executed_cells": 14,
+    "errors": [
+      {
+        "cell": 21,
+        "name": "NameError",
+        "message": "name 'SUBTYPE_RULES' is not defined"
+      }
+    ]
+  },
+  {
+    "source": "zebrafish_human_cross_species_validation.before_expanded_panel.ipynb",
+    "path": "executed_notebooks/zebrafish_human_cross_species_validation.before_expanded_panel.ipynb",
+    "status": "SUPERSEDED HUMAN VALIDATION",
+    "context": "Executed older marker-panel analysis, not the current expanded-panel result.",
+    "kind": "notebook",
+    "bytes": 539919,
+    "sha256": "0cb368bcaa5ba906a43711b7045483270755872bf4d9eed6ccaabf1ddb2a0847",
+    "nonempty_code_cells": 19,
+    "executed_cells": 19,
+    "errors": []
+  }
+]

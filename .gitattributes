@@ -1,0 +1,2 @@
+# Preserve byte-identical historical Matplotlib SVGs, including generated path spacing.
+professor_package/original_figures/**/*.svg -whitespace
